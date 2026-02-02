@@ -34,30 +34,40 @@ else:
 		except ValueError: print("Das geen getal... pik")
 		else: 
 			table = num
+			i = 1
 
-			print(num)
+			print("{} x {} = {}".format(i, table, str(num)))
+			num+=table, 
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
 			num+=table
-			print(num)
-			num+=table
-			print(num)
+			i+=1
+			print("{} x {} = {}".format(i, table, str(num)))
    
 			# en met een for loopje, omdat het kan
 			# for i in range (0, 10):
-			# 	print (num)
+			# 	print("{} x {} = {}".format(i+1, table, str(num)))
 			# 	num+=table
 	
 	else:	print("Don't have that yet, bub")
