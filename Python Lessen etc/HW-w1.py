@@ -37,32 +37,23 @@ else:
 			i = 1
 
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table, 
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
-			num+=table
-			i+=1
+			num+=table; i+=1
 			print("{} x {} = {}".format(i, table, str(num)))
    
 			# en met een for loopje, omdat het kan
