@@ -20,9 +20,9 @@ else:
 
 		print(a + str(b)) # string:"105"
 		print(int(a) + b) # int:15
-		print(a * b) # string:"10 10 10 10 10"
+		print(a * b) # string:"10 10 10 10 10" (had "1010101010" moeten zijn)
 		print(bool("")) # False, empty string
-		print(bool("0")) #true, string("0") not int(0)
+		print(bool("0")) #True, string:"0" not int:0
 
 		# Enige wat ik even over het hoofd had gezien is gebrek aan spaties tussen de 5 * "10"
 
