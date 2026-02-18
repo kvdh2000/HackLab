@@ -133,4 +133,13 @@ while True:
 				compSeq = str.maketrans("ATCG", "TAGC")
 				print(seq.translate(compSeq))
 	
+			case 7:
+				Lijst_Namen = ["Justin", "Henk", "Jantje", "Piet", "Amelia", "Bob", "Kees", "Melle", "Sybren", "Jelly", "Nienke", "Eric", "Durk", "Jamie", "Glenn", "Corné"]
+
+			case 8:
+				print("")
+
+			case 9:
+				print("")
+
 			case _:	print("Don't have that yet, bub")
