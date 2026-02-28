@@ -121,17 +121,17 @@
 #         ats = ats[:-1]
 #         print(ats)
 
-while len(ats) <= arrowlen:
-    if bouw == "op":
-        ats += "@"
-        print(ats)
-        if len(ats) >= arrowlen/2:
-            bouw = "af"
-    elif bouw == "af":
-        if len(ats) == 1:
-            break
-        ats = ats[:-1]
-        print(ats)
+# while len(ats) <= arrowlen:
+#     if bouw == "op":
+#         ats += "@"
+#         print(ats)
+#         if len(ats) >= arrowlen/2:
+#             bouw = "af"
+#     elif bouw == "af":
+#         if len(ats) == 1:
+#             break
+#         ats = ats[:-1]
+#         print(ats)
 
 
 ''' A New DNA'''
