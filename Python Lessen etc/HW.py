@@ -134,12 +134,65 @@ while True:
 				print(seq.translate(compSeq))
 	
 			case 7:
-				Lijst_Namen = ["Justin", "Henk", "Jantje", "Piet", "Amelia", "Bob", "Kees", "Melle", "Sybren", "Jelly", "Nienke", "Eric", "Durk", "Jamie", "Glenn", "Corné"]
+				listNames = ["Justin", "Henk", "Jantje", "Piet", "Amelia", "Bob", "Kees", "Melle", "Sybren", "Jelly", "Nienke", "Eric", "Durk", "Jamie", "Glenn", "Corné"]
+
+				print("Sorry snap helemaal niks van wat hier de bedoeling was. Zelfs nadat ik naar het `antwoord` gekeken heb...")
 
 			case 8:
-				print("")
+				listThings = ["Boeing", "Camaro", "Chevrolet", "Leeuwarden", "Kickboksen", "Kat"]
+				listKeys = ["Plane", "Car Model", "Car Brand", "City", "Sport", "Animal"]
+				dictThings = {}
+
+				for i in range(len(listThings)):
+					dictThings[listKeys[i]] = listThings[i]
+
+				print(dictThings)
+
+				Zoektocht = {'dict' : {'dict' : {'dict' : {'dict' : {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}, 'list': ["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'dict' : {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}, 'list': ["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'dict' : {'Deze': "Het antwoord", 'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}, 'list': ["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'Deze': "Het andwo0rdt", 'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Deze': "Het andw00rd", 'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}}}}}, 'list': ["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'dict' : {'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}, 'list': [["bla", 15, "asdf51sf", "Hallo", ["bla", 15, "asdf51sf", "Hallo"]]], 'ding': "aaaaaaaa", 'Nog een': 15, 'nou nog eentje dan': {'Deze': "Het andwoord", 'Niet deze': "Geen antwoord", 'Ook niet deze': 0, 'Nope': "Nee"}}}
+
+				print(Zoektocht['dict']['nou nog eentje dan']['nou nog eentje dan']['nou nog eentje dan']['dict']['dict']['Deze'])
+				print(Zoektocht['dict']['dict']['dict'])
+
 
 			case 9:
-				print("")
+				text = input("Put in some text").lower()
+
+				if text.count("x") == text.count("o"): print("True")
+				else:print("False")
+
+			case 10: 
+				words = input("Give two strings of equal length").split(" ")
+				word1 = words[0]
+				word2 = words[1]
+				count = 0
+    
+				for i in range(len(word1)):
+					if word1[i] == word2[i]:
+						count+=1
+
+				print(count)
+    
+			case 11: 
+				params = input("Give three numbers").split(" ")
+				x=int(params[0])
+				y=int(params[1])
+				n=int(params[2])        
+				listNums = range(x, y+1)
+				listSorted = []
+
+				for i in listNums:
+					if i % n==0:
+						listSorted.append(i)
+				print(listSorted)
+
+			case 12: 
+				text = input("Put in some text")
+				newText = ""
+
+				for i in text:
+					newText += i
+					newText += i
+
+				print(newText)
 
 			case _:	print("Don't have that yet, bub")
