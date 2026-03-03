@@ -76,6 +76,13 @@ hangingMan = ['''
  |||  |
  | |  |
       |
+=========''', '''
+  +---+
+      |
+      |
+  O   |
+ /|\\  |
+ / \\  |
 =========''']
 
 while True: # gameplay loop
@@ -107,8 +114,8 @@ while True: # gameplay loop
 		print(hangingMan[7])
 		print("You dead... Game Over")
 		break
-
-	if word == "".join(currentState): # win condition
+	elif word == "".join(currentState): # win condition
+		print(hangingMan[8])
 		print("OMG you did it! You WON!")
 		break
 
