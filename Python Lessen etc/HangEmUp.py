@@ -20,12 +20,70 @@ currentState = list(currentState)
 guessedLetters = []
 correctGuess = False
 failedGuesses = 0
+hangingMan = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+ / \\  |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ |||  |
+ | |  |
+      |
+=========''']
 
-while True:
+while True: # gameplay loop
 	print("\n")
-	guess = input("Guess a letter or word:")
-	savestate = currentState
-	if len(guess)==1:
+	guess = input("Guess a letter or word: ")
+
+	if guess in guessedLetters: print("Already guessed that!")
+	elif len(guess)==1: #guessing a letter
 		guessedLetters.append(guess)
 		guessedLetters.sort()
   
@@ -37,11 +95,21 @@ while True:
 		if correctGuess==False:
 			print("That letter was not in the word! Womp womp")
 			failedGuesses += 1
-	elif len(guess)>1:
-		print("") # guessing a word??
+	elif len(guess)>1: # guessing a word??
+		print("Can't guess words... Yet??") 
 
 	print("".join(currentState))
 	print("Guessed letters: {}".format(guessedLetters))
-	# switch case that draws hangman based on failedGuesses
-	# check for win condition
-	correctGuess=False
+
+	if 0 < failedGuesses < 8: # drawing the hangman
+		print(hangingMan[failedGuesses-1])
+	elif failedGuesses >= 8: #fail condition
+		print(hangingMan[7])
+		print("You dead... Game Over")
+		break
+
+	if word == "".join(currentState): # win condition
+		print("OMG you did it! You WON!")
+		break
+
+	correctGuess=False # reset correct guess bool
