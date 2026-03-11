@@ -13,7 +13,7 @@ def wordchoice():
   return random.choice(wordlist)
 
 word = wordchoice()
-print(word)
+# print(word)
 wordLength = len(word)
 currentState = "_" * wordLength
 currentState = list(currentState)
@@ -120,3 +120,16 @@ while True: # gameplay loop
 		break
 
 	correctGuess=False # reset correct guess bool
+
+
+'''
+capitalize guessed letters
+guessing words
+7/8 bij win/lose conditions weg
+restart
+more words
+show correct word on game over
+def Main and everything in functions
+
+difficulty. 999 oid cheat code
+'''
