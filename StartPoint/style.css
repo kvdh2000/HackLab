@@ -67,3 +67,9 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
+footer {
+	text-align: center;
+	padding: 3px;
+	border: 1px solid cyan;
+}
