@@ -4,13 +4,21 @@ body {
 
 h1 {
 	color: black;
+	margin-top: 50px;
+}
+
+h3,
+h4 {
+	color: #181E4C
 }
 
 p {
 	color: indigo;
 }
 
-ul {
+
+/* Nav bar */
+nav ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -23,15 +31,15 @@ ul {
 	justify-content: center;
 }
 
-ul li {
+nav ul li {
 	border-right: 1px solid #bbbbbb
 }
 
-ul li:last-child {
+nav ul li:last-child {
 	border-right: none;
 }
 
-ul li a {
+nav ul li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -39,19 +47,20 @@ ul li a {
 	text-decoration: none;
 }
 
-ul li a.active {
+nav ul li a.active {
 	background-color: indigo;
 	color: white;
 }
 
-li a:hover:not(.active),
+nav li a:hover:not(.active),
 .dropdown:hover:not(.active) .dropbtn,
 .dropdown-content a:hover:not(.active) {
 	background-color: skyblue;
 	color: black;
+	transition: .6s;
 }
 
-li.dropdown {
+nav li.dropdown {
 	display: inline-block;
 }
 
@@ -68,6 +77,60 @@ li.dropdown {
 	display: block;
 }
 
+
+/* Tabs */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	float: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: indigo;
+	color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	position: relative;
+	animation: animateright 0.6s
+}
+
+@keyframes animateright {
+	from {
+		right: -300px;
+		opacity: 0
+	}
+
+	to {
+		right: 0;
+		opacity: 1
+	}
+}
+
+/* Footer */
 footer {
 	text-align: center;
 	padding: 3px;
