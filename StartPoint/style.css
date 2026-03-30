@@ -130,6 +130,21 @@ nav li.dropdown {
 	}
 }
 
+
+/* Figure */
+figure {
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+figcaption {
+	color: indigo;
+	text-align: center;
+}
+
+
 /* Footer */
 footer {
 	text-align: center;
