@@ -1,0 +1,49 @@
+html,
+body,
+main,
+.container,
+.row {
+	height: 100%;
+}
+
+body {
+	background-image: url("Images/hero-ZJe0.webp");
+	height: 90%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 40px;
+	color: #43606f
+}
+
+p {
+	font-size: 20px;
+}
+
+button {
+	font-size: 20px;
+	width: 120px;
+	padding: 5px;
+	border-radius: 25px;
+	border-color: #66858c;
+}
+
+.primaryBttn {
+	background-color: #66858c;
+	color: white;
+}
+
+.secondaryBttn {
+	color: #66858c
+}
+
+.Icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #66858c
+}
