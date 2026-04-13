@@ -24,7 +24,8 @@ nav .btn-secondary {
 
 nav .btn-primary {
 	background-color: #09558b;
-	color: white
+	color: white;
+	border-color: #09558b;
 }
 
 .container {
