@@ -1,3 +1,37 @@
+* {
+	font-family: Solway;
+}
+
+.btn,
+.card {
+	border-radius: 20px;
+}
+
+.navbar {
+	background-color: #b1b2b5;
+}
+
+.nav-title {
+	color: #09558b;
+	font-size: 40px;
+}
+
+nav .btn-secondary {
+	background-color: #b1b2b5;
+	border: none;
+	color: black;
+}
+
+nav .btn-primary {
+	background-color: #09558b;
+	color: white
+}
+
+.container {
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
 .blok1 {
 	background-color: #09558b
 }
@@ -14,17 +48,25 @@
 	background-color: #d7d7d7
 }
 
+h1,
+h2,
+h3 {
+	font-weight: bold;
+}
+
 h1 {
 	font-size: 50px;
 	color: white;
 }
 
 .blok1 p {
-	color: white
+	color: white;
+	font-size: 20px;
 }
 
 h2 {
-	font-size: 30spx;
+	font-size: 30px;
+	padding-bottom: 12px;
 }
 
 h3 {
