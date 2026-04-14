@@ -1,10 +1,16 @@
 * {
-	font-family: Solway;
+	font-family: 'Solway';
 }
 
 .btn,
 .card {
 	border-radius: 20px;
+}
+
+.card img {
+	border-radius: 20px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
 .navbar {
@@ -28,7 +34,7 @@ nav .btn-primary {
 	border-color: #09558b;
 }
 
-.container {
+.not-first {
 	padding-top: 36px;
 	padding-bottom: 36px;
 }
@@ -49,10 +55,18 @@ nav .btn-primary {
 	background-color: #d7d7d7
 }
 
+footer {
+	background-color: #09558b;
+	color: white;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.nav-title,
 h1,
 h2,
 h3 {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h1 {
@@ -74,7 +88,27 @@ h3 {
 	font-size: 20px;
 }
 
+p {
+	font-size: 16px;
+}
+
+.blockquote-footer {
+	color: black
+}
+
+span.price-green {
+	color: #209f58;
+}
+
 .icon-three {
 	font-size: 100px;
 	color: #09558b
+}
+
+.stars {
+	font-size: 30px;
+}
+
+.icon-footer {
+	font-size: 50px;
 }

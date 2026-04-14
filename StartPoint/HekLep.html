@@ -11,14 +11,17 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 			crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style3.css">
 
 	</head>
 
 	<body>
 		<nav class="navbar navbar-expand-md">
-			<div class="container-fluid">
-				<a class="navbar-brand" src="#">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" src="#">
 					<img src="Images/hekLogo.png" alt="Bootstrap" width="40" height="40">
 					<span class="nav-title"> HekLep </span>
 				</a>
@@ -49,13 +52,13 @@
 			<section class="blok1">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-md-6">
+						<div class="col-12 col-md-6 text-center text-md-start" style="padding-top:36px; padding-bottom: 36px;">
 							<h1> Hek kopen? </h1>
-							<p>
+							<p style="margin-top: 40px; margin-bottom: 40px;">
 								Van tuin tot gevangenis: wij hebben het hek dat bij je past.
 							</p>
-							<button type="button" class="btn btn-success"> Bekijk onze hekken </button>
-							<button type="button" class="btn btn-warning"> Vraag een offerte (voor jeb buren) </button>
+							<button type="button" class="btn btn-success"> Bekijk onze <br> hekken </button>
+							<button type="button" class="btn btn-warning"> Vraag een offerte <br> (voor je buren) </button>
 						</div>
 						<div class="d-none d-md-block col-md-6">
 							<img src="Images/hek.jpg" alt="Bootstrap" width="100%">
@@ -64,7 +67,7 @@
 			</section>
 
 			<section class="blok2">
-				<div class="container">
+				<div class="container not-first">
 					<div class="row text-center">
 						<div class="col-12 col-md-4">
 							<i class="bi bi-check-circle-fill icon-three"></i>
@@ -94,14 +97,14 @@
 			</section>
 
 			<section class="blok3">
-				<div class="container">
+				<div class="container not-first">
 					<div class="row">
 						<div class="col-12 text-center">
 							<h2> Uitgelichte hekken </h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-3 my-2 ">
 							<div class="card h-100">
 								<img src="Images/hekSier.jpg" class="card-img-top" alt="..." height="200">
 								<div class="card-body">
@@ -113,12 +116,12 @@
 								</div>
 								<div class="card-footer border-0 bg-transparent">
 									<small class="text-body-secondary">
-										Vanaf <span class="text-success">€149</span> per meter
+										Vanaf <span class="price-green">€149</span> per meter
 									</small>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-3 my-2 ">
 							<div class="card h-100">
 								<img src="Images/hekTuin.webp" class="card-img-top" alt="..." height="200">
 								<div class="card-body">
@@ -129,12 +132,12 @@
 								</div>
 								<div class="card-footer border-0 bg-transparent">
 									<small class="text-body-secondary">
-										Vanaf <span class="text-success">€89</span> per meter
+										Vanaf <span class="price-green">€89</span> per meter
 									</small>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-3 my-2 ">
 							<div class="card h-100">
 								<img src="Images/hekIndustrie.jpg" class="card-img-top" alt="..." height="200">
 								<div class="card-body">
@@ -145,12 +148,12 @@
 								</div>
 								<div class="card-footer border-0 bg-transparent">
 									<small class="text-body-secondary">
-										Vanaf <span class="text-success">€179</span> per meter
+										Vanaf <span class="price-green">€179</span> per meter
 									</small>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-3 my-2 ">
 							<div class="card h-100">
 								<img src="Images/hekDraad.jpg" class="card-img-top" alt="..." height="200">
 								<div class="card-body">
@@ -161,7 +164,7 @@
 								</div>
 								<div class="card-footer border-0 bg-transparent">
 									<small class="text-body-secondary">
-										Vanaf <span class="text-success">€49</span> per meter
+										Vanaf <span class="price-green ">€49</span> per meter
 									</small>
 								</div>
 							</div>
@@ -171,13 +174,63 @@
 			</section>
 
 			<section class="blok4">
-				<div class="container">
+				<div class="container not-first">
 					<div class="row">
-						<div class="col">
-							test
+						<div class="col-12 col-md-6">
+							<div class="card mb-3" style="width: 100%;">
+								<div class="card-body">
+									<figure>
+										<blockquote class="blockquote">
+											<p>
+												"Ik dacht: het is maar een hek. Maar dit is een lifestyle."
+											</p>
+										</blockquote>
+										<figcaption class="blockquote-footer text-end">
+											Jan uit Utrecht
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="card mb-3" style="width: 100%;">
+								<div class="card-body">
+									<figure>
+										<blockquote class="blockquote">
+											<p>
+												"Na de montage heb ik de buren 3 dagen niet meer gezien. Heerlijk."
+											</p>
+										</blockquote>
+										<figcaption class="blockquote-footer text-end">
+											Sophie uit Gent
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="card mb-3" style="width: 100%;">
+								<div class="card-body">
+									<figure>
+										<blockquote class="blockquote">
+											<p>
+												"Hekken zijn de nieuwe schuttingen. Wij zijn fan."
+											</p>
+										</blockquote>
+										<figcaption class="blockquote-footer text-end">
+											Familie van Dijk, Haarlem
+										</figcaption>
+									</figure>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							test
+						<div class="col-12 col-md-6 text-center text-md-start">
+							<h2 style="padding-bottom: 10px;"> Wat mensen zeggen die niet meer over hun hek kunnen kijken </h2>
+							<i class="bi bi-star-fill text-warning stars"></i>
+							<i class="bi bi-star-fill text-warning stars"></i>
+							<i class="bi bi-star-fill text-warning stars"></i>
+							<i class="bi bi-star-fill text-warning stars"></i>
+							<i class="bi bi-star-fill text-warning stars"></i>
+							<p>
+								4.8 uit 5 (volledig ongekocht, beloofd)
+							</p>
+
 						</div>
 					</div>
 				</div>
@@ -186,7 +239,27 @@
 		</main>
 
 		<footer>
-
+			<div class="row d-flex align-items-center">
+				<div class="col-12 col-md-2 offset-md-4 text-center text-md-start order-2 order-md-1">
+					<i class="bi bi-facebook icon-footer" style="margin-right: 50px;"></i>
+					<i class="bi bi-instagram icon-footer"></i>
+				</div>
+				<div class="col-6 col-md-2 offset-3 offset-md-0 order-1 order-md-2">
+					<p style="margin-top: 12px; margin-bottom: 2px;">
+						<i class="bi bi-file-earmark-text-fill"></i>
+						<span>Privacybeleid</span>
+					</p>
+					<p style="margin-top: 2px;">
+						<i class="bi bi-file-earmark-text-fill"></i>
+						<span>Algemede voorwaarden</span>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-4 offset-md-4 text-center text-md-start">
+					<p> © 2025 Hek Lep - Grenzen stelllen sinds 1998 </p>
+				</div>
+			</div>
 		</footer>
 	</body>
 
