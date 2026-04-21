@@ -1,248 +1,435 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 
 	<head>
-		<title> Home </title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
+		<title> Home </title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+			</script>
+		<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style0.css">
 	</head>
 
 	<body>
-		<nav>
-			<ul>
-				<li>
-					<a class="active" href="index.html"> Home </a>
-				</li>
-				<li>
-					<a href="indexNew.html"> NEW Home </a>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn"> Week 1 </a>
-					<div class="dropdown-content">
-						<a href="vacatures.html"> Vacatures </a>
-						<a href="mirror.html"> Mirror </a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn"> Hero </a>
-					<div class="dropdown-content">
-						<a href="Lackhab.html"> Lackhab </a>
-						<a href="HekLep.html"> HekLep </a>
-						<a href="Hacktaarten.html"> Hacktaarten </a>
-					</div>
-				</li>
-			</ul>
+		<nav class="navbar navbar-expand-lg bg-info-subtle">
+			<div class="container-fluid px-2 px-lg-3">
+				<a class="navbar-brand d-flex align-items-center gap-1" href="#">
+					<img src="images/WK_outline.png" alt="Logo" width="26" height="26">
+					<span class="fw-normal">
+						K.R.K
+					</span>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHacktaarten"
+					aria-controls="navbarHacktaarten" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarHacktaarten">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 small">
+						<li class="nav-item">
+							<a class="nav-link active" href="indexNew.html">
+								Home
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								OLD Home
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Week 1
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="mirror.html">
+										Mirror
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="vacatures.html">
+										Vacatures
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Hero
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="Lackhab.html">
+										Lackhab
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="HekLep.html">
+										HekLep
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="Hacktaarten.html">
+										Hacktaarten
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<form class="d-flex gap-2" role="search">
+						<input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success btn-sm" type="submit">
+							<i class="bi bi-search"></i>
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
 		</nav>
-
 		<main>
-			<h1> Introductions </h1>
+			<section class="bg-warning-subtle py-5">
+				<div class="container py-4">
+					<div class="row align-items-center justify-content-center g-5">
+						<div class="col-lg-5">
+							<h1 class="display-5 mb-4">
+								Hacktaarten
+							</h1>
+							<p class="fs-2 mb-4">
+								Een dag geen taart is een dag niet geleefd
+							</p>
+							<a href="#" class="btn btn-primary">
+								Proef nu
+							</a>
+						</div>
 
-			<div class="tab">
-				<button class="tablinks" onclick="openTab(event, 'Dutch')"> Nederlands </button>
-				<button class="tablinks" onclick="openTab(event, 'English')"> English </button>
-			</div>
+						<div class="col-lg-5 text-center">
+							<img src="images/Hacktaarten/taart0.webp" class="img-fluid" alt="Taart hero">
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<div id="Dutch" class="tabcontent">
-				<h3> Over Mij </h3>
+			<section class="bg-success-subtle py-5">
+				<div class="container py-2">
+					<h2 class="text-center mb-5">
+						Waarom mijn taarten beter zijn
+					</h2>
 
-				<h4> Wie ben ik? </h4>
-				<p>
-					TBD
-				</p>
+					<div class="row text-center g-4">
+						<div class="col-md-4">
+							<div class="mb-3">
+								<i class="bi bi-layers fs-1"></i>
+							</div>
+							<h3 class="h4">
+								Meer lagen dan je ex
+							</h3>
+							<p class="mb-0">
+								Onze taarten zijn complex, smaakvol en laten je wél met een goed gevoel achter.
+							</p>
+						</div>
 
-				<h4> Waarom dit traject? </h4>
-				<p>
-					TBD
-				</p>
+						<div class="col-md-4">
+							<div class="mb-3">
+								<i class="bi bi-cake2-fill fs-1"></i>
+							</div>
+							<h3 class="h4">
+								Zo luchtig als je weekendplannen
+							</h3>
+							<p class="mb-0">
+								Onze slagroom zweeft bijna van je vork af. Geen zorgen, we zorgen voor een servetje.
+							</p>
+						</div>
 
-				<h4> Wat wil ik leren? </h4>
-				<p>
-					TBD
-				</p>
+						<div class="col-md-4">
+							<div class="mb-3">
+								<i class="bi bi-arrow-through-heart-fill fs-1"></i>
+							</div>
+							<h3 class="h4">
+								Geen margarine, geen spijt
+							</h3>
+							<p class="mb-0">
+								Wij bakken met échte boter, liefde en een snufje koppigheid - want smaak wint altijd.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-				<h4> Wat lijkt me lastig of spannend? </h4>
-				<p>
-					TBD
-				</p>
+			<section class="bg-info-subtle py-5">
+				<div class="container py-2">
+					<div class="row align-items-center g-4">
+						<div class="col-lg-5">
+							<div class="row g-3 align-items-stretch">
+								<div class="col-6 d-flex">
+									<img src="images/Hacktaarten/taart1.webp" class="img-fluid rounded-4 w-100 h-100 object-fit-cover"
+										alt="Kleurrijke taart">
+								</div>
+								<div class="col-6 d-flex">
+									<img src="images/Hacktaarten/taart2.avif" class="img-fluid rounded-4 w-100 h-100 object-fit-cover"
+										alt="Chocoladetaart">
+								</div>
+							</div>
+						</div>
 
-				<h4> Vooruitblik </h4>
-				<p>
-					TBD
-				</p>
-			</div>
+						<div class="col-lg-7">
+							<h2 class="display-6 mb-3">
+								Over mij
+							</h2>
+							<p>
+								Hoi! Ik ben Justin, zelfverklaard taartenfluisteraar, meester in het vermijden van diëten en de reden
+								dat je broek net iets strakker zit. Wat begon als een hobby en een excuus om elke dag taart te eten is
+								inmiddels uitgegroeid tot een serieuze missie: de wereld een beetje zoeter maken - één plak per keer.
+							</p>
+							<p>
+								Ik geloof heilig in echte boter, verse ingrediënten en het recht op een tweede stuk. Mijn oven kent geen
+								geheimen, behalve waarom hij altijd piept op het spannendste moment van <em>Heel Holland Bakt</em>.
+							</p>
+							<p class="mb-0">
+								Kom vooral proeven, lachen en genieten. Want eerlijk is eerlijk: het leven is al ingewikkeld genoeg
+								zonder taarten.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<div id="English" class="tabcontent">
-				<h3> About Me </h3>
+			<section class="bg-light py-4 py-lg-5">
+				<div class="container py-2">
+					<div class="row g-4 align-items-start">
+						<div class="col-lg-6">
+							<h2 class="text-center mb-3">
+								FAQ
+							</h2>
 
-				<h4> Who am I? </h4>
-				<p>
-					I am Kalan, 25 years of age, and a wannabe game developer and designer located in Leeuwarden (the
-					Netherlands). While I
-					went to NHL-Stenden to study HBO-ICT and specialized in Software Engineering and Game Development, my true
-					passion lies
-					in storywriting, especially those behind games, for example.
-				</p>
-				<p>
-					The reason I went the HBO-ICT route is that I have always had an affinity for computers and technology as a
-					whole, and
-					while I do prefer the storywriting aspect of things, I’d also love to be able to work on games based on my own
-					stories.
-				</p>
-				<p>
-					On a more personal level of “about me”, I was born and raised in Leeuwarden, while my parents come from the
-					Rotterdam
-					area and the Hague, respectively. I am an only child, and for the last 9 years, I’ve been living on my own in
-					the city.
-					In my spare time, I spend a lot of time socializing with those near and dear to me, like my relationship
-					partners and
-					friends, and besides that, I play a lot of video games, write stories, and watch some TV. I also do volunteer
-					work at
-					COC, specifically for their Cocktail department, which involves organizing meetings for LGBTQ+ refugees within
-					Friesland. On that note, I’ve been out of the closet since 2016, and find joy in discussing the pedantics of
-					the queer
-					communities I find myself a part of.
-				</p>
+							<div class="accordion" id="faqAccordion">
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button bg-info text-dark" type="button" data-bs-toggle="collapse"
+											data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+											Maak je ook suikervrije taarten?
+										</button>
+									</h2>
+									<div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+										<div class="accordion-body">
+											Ja hoor! Ze bevatten net zoveel liefde, alleen iets minder schuldgevoel. Perfect voor mensen die
+											willen genieten zonder suikercrash.
+										</div>
+									</div>
+								</div>
 
-				<h4> Why this course? </h4>
-				<p>
-					The reason I ended up at HackLab was simply that it was the most convenient and logical option within those
-					offered to
-					me by City Hall. The purpose behind it is largely to get the green light to go back to school and finish the
-					last
-					year of
-					my studies without losing my monetary benefits, as well as to refresh a lot of the knowledge I learned all
-					those years
-					ago, but haven’t used in over 5 years.
-				</p>
-				<p>
-					Aside from that, the added bonus is that I might acquire connections and insights into the professional ICT
-					world, which I don’t know much about. The main thing I need to finish at my study is the work exchange, for
-					which I’m sure I’ll find some useful information while I'm at HackLab, and if nothing else, hopefully find a
-					suitable
-					place to do said work exchange.
-				</p>
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-info text-dark" type="button" data-bs-toggle="collapse"
+											data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+											Hoe lang blijft een taart goed?
+										</button>
+									</h2>
+									<div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+										<div class="accordion-body">
+											Meestal 2 tot 4 dagen in de koelkast. Maar eerlijk: de meeste halen het einde van dag 1 niet.
+										</div>
+									</div>
+								</div>
 
-				<h4> What do I want to learn? </h4>
-				<p>
-					While not exactly related to HackLab, one of the things I’d love to learn comes back to when I was in my third
-					year at
-					HBO-ICT, and took a minor in CMD, namely “Game Development and 3D. Here I had the chance to lean more into the
-					creative
-					aspect of things, rather than the software development. It’s here that I learned my largest weakness in my
-					goals, my
-					utter lack of skill in the visual arts. While I have a good eye for story development and plot handling, I am
-					terrible
-					at drawing or sketching, let alone proper 2D or 3D art. While I have the vision, I lack the skill to
-					illustrate it to
-					others. Again, this is not something I could quite learn within HackLab, but it is something I want to work
-					on, at some point.
-				</p>
-				<p>
-					More specifically to HackLab, however, I don’t have anything in particular that I wish to learn. I see this
-					more as
-					a place
-					to build some structure in my life, and refresh the knowledge I’ve learned in years past that has sunk into
-					the depths
-					of my memory. That's not to say that I can't or won't learn anything during my time at HackLab, but just that
-					there's nothing in specific I'm looking for in that regard.
-				</p>
+								<div class="accordion-item border-0">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed bg-info text-dark" type="button" data-bs-toggle="collapse"
+											data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+											Mag ik ook een klein stukje?
+										</button>
+									</h2>
+									<div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+										<div class="accordion-body">
+											Natuurlijk. Maar meestal blijft het niet bij één stukje.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-				<h4> What seems difficult or daunting to me? </h4>
-				<p>
-					As comes as a surprise to no one, the biggest challenges for me regarding HackLab are those that I have with
-					regular
-					school or work as well.
-				</p>
-				<p>
-					Firstly, for as long as I can remember, I’ve had many issues with my sleep, most notably getting to sleep and
-					waking up
-					while not having slept long. This makes it hard to keep a rhythm, if not impossible for the most part, and can
-					present
-					challenges in my week-to-week life as I have to do more and more. These challenges mostly come in the form of
-					being
-					overly exhausted, shortening my already short attention span, and the chance of sleeping through my alarms on
-					nights I
-					slept particularly short.
-				</p>
-				<p>
-					Secondly, there are my issues with my knees, which simply make it a challenge to sit behind an unoptimized
-					desk for
-					hours on end, to walk up the stairs, and even to get to places multiple times a week or day. So far, it’s been
-					mostly
-					manageable, but I’m noticing I’m starting to struggle more and more with being able to get where I need to be,
-					when I
-					need to be there. Especially the staircases are becoming much harder at this point, as well as sitting
-					still(ish) for
-					long periods of time.
-				</p>
-				<p>
-					Whilst not particularly difficult or daunting, I do find it hard to stay motivated for things within HackLab
-					when they
-					don’t align with my immediate goals or wants. For example, looking into job applications just doesn’t interest
-					me right
-					now, as I’m not intending to get a job, but rather go back to school. Similarly, staying invested in web
-					development is
-					not exactly easy either. Between the varying mental disorders and issues I have, it’s not always easy to stay
-					focused or
-					engaged with those subjects and assignments, as I just don’t care for it.
-				</p>
-				<p>
-					So far, the latter bit has been going well enough, but I find myself cutting corners and not delivering the
-					quality I
-					know I’m capable of, and finding it hard to motivate myself to actually work on it. Even as I’m writing all
-					this, it’s
-					merely to distract myself from the fact that I’ve not finished the technical parts of the website, and I’m
-					procrastinating working on it, even while it’s the night before at this moment
-				</p>
+						<div class="col-lg-6">
+							<div class="row g-3 align-items-start">
+								<div class="col-md-6 d-flex">
+									<div class="card w-100 border-0 rounded-2">
+										<img src="images/Hacktaarten/taart3.jpg" class="card-img-top w-100 ratio ratio-4x3 object-fit-cover"
+											alt="Mijn beste recepten">
+										<div class="card-body d-flex flex-column">
+											<h3 class="card-title h5 mb-2">
+												Mijn beste recepten
+											</h3>
+											<p class="card-text mb-3">
+												Mijn taarten zijn het resultaat van jaren bakken, proeven, misbaksels en heel veel “oeps, dat
+												doen we dus niet meer”.
+											</p>
+											<a href="#" class="btn btn-primary align-self-start">
+												Lees meer
+											</a>
+										</div>
+									</div>
+								</div>
 
-				<h4> A look forward </h4>
-				<p>
-					When it comes to the immediate future, it looks like it’s mostly a case of needing to find the right
-					motivations and
-					discipline to keep working on things as time goes on, as well as maybe finding a way to let my creativity flow
-					through
-					these assignments in a way that works for me.
-				</p>
-				<p>
-					Aside from that, the practical challenges that come with HackLab for me, like my knees and sleep issues, will
-					continue
-					needing to be addressed, as fruitless as that typically goes.
-				</p>
-			</div>
+								<div class="col-md-6 d-flex">
+									<div class="card w-100 border-0 rounded-2">
+										<img src="images/Hacktaarten/taart4.webp" class="card-img-top" alt="Chocola met chocola">
+										<div class="card-body d-flex flex-column">
+											<h3 class="card-title h5 mb-2">
+												Chocola met chocola
+											</h3>
+											<p class="card-text mb-3">
+												Voor de echte liefhebbers. Voor de mensen die bij “wil je chocola?”
+												niet vragen “puur of melk?” maar gewoon “ja”.
+											</p>
+											<a href="#" class="btn btn-primary align-self-start">
+												Lees meer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
 		</main>
 
-		<footer>
-			<p>
-				© Kalan van den Hoogen
-			</p>
-			<p>
-				<img src="Images/hornet-footer.gif" width=30%>
-			</p>
+		<footer class="bg-dark text-white py-5">
+			<div class="container">
+				<div class="row g-5">
+					<div class="col-lg-5">
+						<div class="mb-4">
+							<h3 class="h5">
+								<i class="bi bi-geo-alt-fill me-2"></i>
+								Adres
+							</h3>
+							<p class="mb-0">
+								Zoetelaan 7B
+								<br> 1234 TA Bakkerdam
+							</p>
+						</div>
+
+						<div class="mb-4">
+							<h3 class="h5">
+								<i class="bi bi-telephone-fill me-2"></i>
+								Telefoon
+							</h3>
+							<p class="mb-1">
+								06 - 123 45 678
+							</p>
+							<p class="small text-white-50 mb-0">
+								Liever appen dan bellen? Helemaal prima - multitasken kan ook met ovenhandschoenen.
+							</p>
+						</div>
+
+						<div class="mb-4">
+							<h3 class="h5">
+								<i class="bi bi-envelope-fill me-2"></i>
+								E-mail
+							</h3>
+							<p class="mb-1">
+								<a href="#" class="link-info">
+									hallo@taartenvanjou.nl
+								</a>
+							</p>
+							<p class="small text-white-50 mb-0">
+								Voor bestellingen, vragen of gewoon een lief berichtje.
+							</p>
+						</div>
+
+						<div class="mb-4">
+							<h3 class="h5">
+								<i class="bi bi-instagram me-2"></i>
+								Instagram
+							</h3>
+							<p class="mb-1">
+								<a href="#" class="link-info">
+									@taartenvanjou
+								</a>
+							</p>
+							<p class="small text-white-50 mb-0">
+								Scrollen op eigen risico - je krijgt honger.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="h5">
+								<i class="bi bi-clock-fill me-2"></i>
+								Openingstijden
+							</h3>
+							<p class="mb-1">
+								<strong>Ma t/m Za:</strong> 10:00 - 17:00
+							</p>
+							<p class="mb-0">
+								<strong>Zondag:</strong> Alleen op afspraak of als de oven niet wil uitrusten
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<h2 class="display-6 mb-4">
+							Stuur ons een berichtje
+						</h2>
+
+						<form>
+							<div class="row g-3">
+								<div class="col-md-6">
+									<label for="naam" class="form-label">
+										Naam
+									</label>
+									<input type="text" class="form-control" id="naam" placeholder="Je naam">
+								</div>
+
+								<div class="col-md-6">
+									<label for="mail" class="form-label">
+										E-mailadres
+									</label>
+									<input type="email" class="form-control" id="mail" placeholder="naam@example.com">
+								</div>
+
+								<div class="col-12">
+									<label for="telefoon" class="form-label">
+										Telefoonnummer (optioneel)
+									</label>
+									<input type="text" class="form-control" id="telefoon" placeholder="06 - 123 45 678">
+								</div>
+
+								<div class="col-12">
+									<label for="bericht" class="form-label"> Bericht </label>
+									<textarea class="form-control" id="bericht" rows="4"
+										placeholder="Laat hier je bericht achter"></textarea>
+								</div>
+
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="toestemming">
+										<label class="form-check-label" for="toestemming">
+											Ik geef toestemming om mijn gegevens te gebruiken voor contact (we spammen niet, beloofd).
+										</label>
+									</div>
+								</div>
+
+								<div class="col-12 text-md-end">
+									<button type="submit" class="btn btn-primary">
+										Verstuur bericht
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
-
-	<script>
-		function openTab(evt, languageTab)
-		{
-			var i, tabcontent, tablinks;
-
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++)
-			{
-				tabcontent[i].style.display = "none";
-			}
-
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++)
-			{
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-
-			document.getElementById(languageTab).style.display = "block";
-			evt.currentTarget.className += " active";
-		}
-	</script>
 
 </html>
