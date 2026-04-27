@@ -3,15 +3,16 @@
 }
 
 .sec-purp .btn-primary {
-	background-color: #4b0082;
-	border-color: #4b0082;
-}
-
-.sec-purp .btn-primary:hover {
 	background-color: #4b00824d;
 	border-color: #4b0082;
 	color: black;
+}
+
+.sec-purp .btn-primary:hover {
+	background-color: #4b0082;
+	border-color: #4b0082;
 	transition: .6s;
+	color: white;
 }
 
 .sec-blue {
