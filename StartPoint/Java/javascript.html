@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Java </title>
+
+		<script>
+			console.log("Hello there")
+
+			let age = 24;
+			const name = "Kalan";
+
+
+			function greet()
+			{
+				console.log("Hey" + name);
+			}
+
+			greet();
+
+
+			document.addEventListener("DOMContentLoaded", function ()
+			{
+				const title = document.getElementById("title");
+
+				console.log(title);
+				title.innerHTML = "hah";
+				console.log(title);
+
+				const nameInput = document.getElementById("nameInput");
+				// nameInput.type = "date";
+
+				title.style.color = "blue";
+
+				const reset = document.getElementById("reset");
+				reset.addEventListener("click", function ()
+				{
+					nameInput.value = ""
+
+				})
+
+
+				const newElement = document.createElement("p");
+				newElement.innerHTML = "tesssssssst";
+				newElement.classList.add("newP");
+
+				document.getElementById("content").append(newElement)
+
+				// title.remove();
+
+				document.querySelectorAll("p").forEach(function (paragraph)
+				{
+					paragraph.style.fontSize = "30px"
+				})
+
+				document.querySelector("#title").style.color = "purple"
+			})
+
+			function changeTitle()
+			{
+				const title = document.getElementById("title");
+				const nameInput = document.getElementById("nameInput");
+
+				title.innerHTML = nameInput.value;
+			}
+
+			function setNewWidth()
+			{
+				const box = document.getElementById("box");
+				const widthInput = document.getElementById("widthInput").value;
+				// box.style.transition = "width .6s ease";
+				box.style.width = widthInput + "px";
+
+			}
+		</script>
+		<style>
+			#box {
+				width: 400px;
+				height: 100px;
+				background-color: lightblue;
+				border: 2px solid blue;
+				padding: 10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				transition: width .6s ease;
+			}
+
+			.newP {
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<h1 id="title">
+				text
+			</h1>
+			<p>
+				text text text text text text text text text text text text text text text text text text text text text text
+				text text text text text text text text text text text text text text text text text text text text text text
+				text text text text text text text text text text text text
+				text text text text text text text text
+			</p>
+			<input type="text" name="name" id="nameInput" placeholder="Enter Name">
+			<button onclick="changeTitle()">
+				change title
+			</button>
+			<button id="reset">
+				Reset
+			</button>
+
+			<div id="box">
+				<p><br>This is a box that can be styled with CSS.</p>
+				<input type="number" name="width" id="widthInput" placeholder="Enter width in px">
+				<button onclick="setNewWidth()">Set</button>
+			</div>
+
+			<div id="content">
+
+			</div>
+		</main>
+
+		<footer>
+
+		</footer>
+	</body>
+
+</html>
